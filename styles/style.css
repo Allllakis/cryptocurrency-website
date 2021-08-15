@@ -7,7 +7,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Rubik", sans-serif;
-  background-color: #0d0d2b;
+  background-color: #010004;
 }
 
 .header {
@@ -27,9 +27,30 @@ body {
           justify-content: space-between;
 }
 
+.header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
 .header .logo img {
-  width: 13.38rem;
-  height: 4rem;
+  width: 6rem;
+  height: 5.2rem;
+  border-radius: 100%;
+  background-color: #010004;
+  -webkit-box-shadow: 1px 1px 2px rgba(255, 204, 51, 0.5);
+          box-shadow: 1px 1px 2px rgba(255, 204, 51, 0.5);
+}
+
+.header .logo p {
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgba(255, 204, 51, 0.5);
+  text-shadow: 1px 1px 2px rgba(255, 204, 51, 0.5);
 }
 
 .header .nav__items {
@@ -58,28 +79,39 @@ body {
   text-decoration: none;
   font-size: 1.6rem;
   line-height: 2.8rem;
+  -webkit-transition: 0.5s ease color;
+  transition: 0.5s ease color;
+}
+
+.header .nav__items .nav__link:hover {
+  color: #005e32;
+  -webkit-transition: 0.5s ease color;
+  transition: 0.5s ease color;
 }
 
 .header .nav__items .header__btn {
   width: 13rem;
   height: 5.2rem;
   border-radius: 3.2rem;
-  background-color: #3671e9;
-  color: #ffffff;
   font-family: "Rubik";
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 150%;
   border-width: 0px;
   cursor: pointer;
-  -webkit-transition: 0.5s ease background-color;
-  transition: 0.5s ease background-color;
+  color: #0d0d2b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00eebe), to(#005e32));
+  background: linear-gradient(#00eebe, #005e32);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .header .nav__items .header__btn:hover {
-  -webkit-transition: 0.5s ease background-color;
-  transition: 0.5s ease background-color;
-  background-color: #2b076e;
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#be9ff8), to(#050b3b));
+  background: linear-gradient(#be9ff8, #050b3b);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .info {
@@ -117,6 +149,8 @@ body {
           justify-content: space-between;
   color: #ffffff;
   font-family: "Rubik";
+  background-color: #0d0d2b;
+  padding: 2rem;
 }
 
 .info .info__wrap .info__text {
@@ -150,7 +184,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   line-height: 150%;
-  background-color: #ffffff;
+  background: rgba(255, 204, 51, 0.9);
   color: #0d0d2b;
   border-radius: 3.2rem;
 }
@@ -165,7 +199,7 @@ body {
 
 .info .info__wrap .info__title {
   font-weight: 700;
-  font-size: 6.4rem;
+  font-size: 5.2rem;
   line-height: 7.6rem;
   margin: 2rem 0;
 }
@@ -181,21 +215,43 @@ body {
   width: 15.4rem;
   height: 5.9rem;
   border-radius: 3.2rem;
-  background-color: #3671e9;
-  color: #ffffff;
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 150%;
   border-width: 0px;
   cursor: pointer;
-  -webkit-transition: 0.5s ease background-color;
-  transition: 0.5s ease background-color;
+  color: #0d0d2b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00eebe), to(#005e32));
+  background: linear-gradient(#00eebe, #005e32);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .info .info__wrap .info__btn:hover {
-  -webkit-transition: 0.5s ease background-color;
-  transition: 0.5s ease background-color;
-  background-color: #2b076e;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: -webkit-gradient(linear, left top, left bottom, from(#be9ff8), to(#050b3b));
+  background: linear-gradient(#be9ff8, #050b3b);
+}
+
+.info .img-blur {
+  width: 90rem;
+  height: 46rem;
+  padding: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.info .img-blur:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: inset 0 0 20px 20px #0d0d2b;
+          box-shadow: inset 0 0 20px 20px #0d0d2b;
 }
 
 .statistics {
@@ -211,6 +267,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #010004;
 }
 
 .statistics .statistics__items {
@@ -231,6 +288,28 @@ body {
   display: -ms-flexbox;
   display: flex;
   color: #ffffff;
+}
+
+.statistics .statistics__items .statistics__item .statistics-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#005e32), color-stop(#00eebe), to(#005e32));
+  background: linear-gradient(#005e32, #00eebe, #005e32);
+}
+
+.statistics .statistics__items .statistics__item .statistics-image img {
+  width: 5rem;
+  height: 5rem;
 }
 
 .statistics .statistics__items .statistics__item .item__text {
@@ -360,34 +439,37 @@ body {
   width: 14.6rem;
   height: 5.9rem;
   border-radius: 3.2rem;
-  background: #3671e9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00eebe), to(#005e32));
+  background: linear-gradient(#00eebe, #005e32);
   border: none;
-  color: #ffffff;
+  color: #0d0d2b;
   font-family: "Rubik";
   font-size: 1.8rem;
   line-height: 150%;
   cursor: pointer;
-  -webkit-transition: 0.5s ease background-color;
-  transition: 0.5s ease background-color;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .trade .calck__head .calck__btn:hover {
-  -webkit-transition: 0.5s ease background-color;
-  transition: 0.5s ease background-color;
-  background-color: #2b076e;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#be9ff8), to(#050b3b));
+  background: linear-gradient(#be9ff8, #050b3b);
 }
 
-.page__light {
+.page__violet {
   width: 120.2rem;
-  height: 120rem;
+  height: 1600px;
   padding-left: 15rem;
   padding-right: 15rem;
   margin-bottom: -2rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f8f9fb), to(#fafbff));
-  background: linear-gradient(180deg, #f8f9fb 0%, #fafbff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d0d2b), to(#2b076e));
+  background: linear-gradient(180deg, #0d0d2b 0%, #2b076e 100%);
 }
 
-.page__light .page__light--items {
+.page__violet .page__violet--items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,13 +482,12 @@ body {
           align-items: center;
 }
 
-.page__light .page__light--items .calck__footer {
+.page__violet .page__violet--items .calck__footer {
   width: 94.2rem;
-  height: 21.6rem;
+  height: 20rem;
   background: #ffffff;
-  -webkit-box-shadow: 0px 80px 40px #efeaf8;
-          box-shadow: 0px 80px 40px #efeaf8;
-  opacity: 0.9;
+  -webkit-box-shadow: 0px 80px 40px #290a64;
+          box-shadow: 0px 80px 40px #290a64;
   border-radius: 0 0 1.6rem 1.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,7 +509,7 @@ body {
   margin-bottom: 10rem;
 }
 
-.page__light .page__light--items .calck__footer .calck__footer--title {
+.page__violet .page__violet--items .calck__footer .calck__footer--title {
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.04em;
@@ -438,7 +519,7 @@ body {
   margin: 0;
 }
 
-.page__light .page__light--items .calck__footer .calck__footer--total {
+.page__violet .page__violet--items .calck__footer .calck__footer--total {
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 150%;
@@ -448,11 +529,11 @@ body {
   margin: 0;
 }
 
-.page__light .page__light--items .calck__footer .calck__footer--total span {
-  color: #3671e9;
+.page__violet .page__violet--items .calck__footer .calck__footer--total span {
+  color: #005e32;
 }
 
-.page__light .page__light--items .calck__footer .calck__footer--discription {
+.page__violet .page__violet--items .calck__footer .calck__footer--discription {
   line-height: 2.8rem;
   letter-spacing: 0.01em;
   color: #828282;
@@ -460,7 +541,8 @@ body {
   margin-top: 0;
 }
 
-.page__light .crypto {
+.page__violet .crypto {
+  height: 131.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,19 +553,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: Rubik;
+  font-family: "Rubik";
 }
 
-.page__light .crypto .crypto__title {
+.page__violet .crypto .crypto__title {
   width: 74.1rem;
   font-weight: 700;
   font-size: 4rem;
   line-height: 150%;
   text-align: center;
   margin-bottom: 6.4rem;
+  color: #ffffff;
 }
 
-.page__light .crypto .crypto__items {
+.page__violet .crypto .crypto__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,9 +576,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.page__light .crypto .crypto__items .crypto__item {
+.page__violet .crypto .crypto__items .crypto__item {
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,47 +595,48 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 37rem;
+  width: 27rem;
   height: 43.3rem;
   margin-right: 4.5rem;
+  margin-bottom: 4.5rem;
   background: #ffffff;
-  -webkit-box-shadow: 0px 40px 40px #efeaf8;
-          box-shadow: 0px 40px 40px #efeaf8;
   border-radius: 16px;
-  font-family: "Rubik";
   font-weight: 400;
   font-size: 1.6rem;
+  opacity: 0.9;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.page__light .crypto .crypto__items .crypto__item img {
+.page__violet .crypto .crypto__items .crypto__item img {
   width: 8rem;
   height: 8rem;
   margin-bottom: 4.8rem;
 }
 
-.page__light .crypto .crypto__items .crypto__item .image__btn {
+.page__violet .crypto .crypto__items .crypto__item .image__btn {
   width: 1.2rem;
   height: 2rem;
   margin-bottom: 0;
   cursor: pointer;
 }
 
-.page__light .crypto .crypto__items .crypto__item.bitcoin {
-  background: #2b076e;
+.page__violet .crypto .crypto__items .crypto__item.dogecoin {
+  background: #050b3b;
+  -webkit-box-shadow: 0px 40px 40px #341f5c;
+          box-shadow: 0px 40px 40px #341f5c;
   color: #ffffff;
+  opacity: 1;
 }
 
-.page__light .crypto .crypto__items .crypto__item.bitcoin span {
-  color: #ffffff;
-}
-
-.page__light .crypto .crypto__items .crypto__item.bitcoin a {
+.page__violet .crypto .crypto__items .crypto__item.dogecoin a {
   width: 20.5rem;
   height: 6.4rem;
   border-radius: 3.2rem;
-  background: #3671e9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00eebe), to(#005e32));
+  background: linear-gradient(#00eebe, #005e32);
   border: none;
-  color: #ffffff;
+  color: #0d0d2b;
   font-family: "Rubik";
   font-size: 1.8rem;
   line-height: 150%;
@@ -564,35 +651,26 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
-  -webkit-transition: 0.5s ease background-color;
-  transition: 0.5s ease background-color;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.page__light .crypto .crypto__items .crypto__item.bitcoin a .vector__btn {
-  width: 3.2rem;
-  height: 3.2rem;
-  background-color: #ffffff;
-  border-radius: 100%;
-  background-image: url(../image/Vector.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  margin-left: 2.4rem;
+.page__violet .crypto .crypto__items .crypto__item.dogecoin a:hover {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e08e68), to(orange));
+  background: linear-gradient(#e08e68, orange);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.page__light .crypto .crypto__items .crypto__item.bitcoin a:hover {
-  -webkit-transition: 0.5s ease background-color;
-  transition: 0.5s ease background-color;
-  background-color: orange;
-}
-
-.page__light .crypto .crypto__items .crypto__item h3 {
+.page__violet .crypto .crypto__items .crypto__item h3 {
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 150%;
   margin: 0;
 }
 
-.page__light .crypto .crypto__items .crypto__item h3 span {
+.page__violet .crypto .crypto__items .crypto__item h3 span {
   font-weight: 500;
   font-size: 1.8rem;
   opacity: 0.7;
@@ -600,7 +678,7 @@ body {
   margin-left: 0.8rem;
 }
 
-.page__light .crypto .crypto__items .crypto__item p {
+.page__violet .crypto .crypto__items .crypto__item p {
   padding-left: 2.4rem;
   padding-right: 2.4rem;
   line-height: 2.8rem;
@@ -608,29 +686,39 @@ body {
   letter-spacing: 0.01em;
 }
 
-.page__light .crypto .crypto__items .crypto__item button {
+.page__violet .crypto .crypto__items .crypto__item button {
   width: 64px;
   height: 64px;
-  border: 2px solid rgba(43, 7, 110, 0.2);
+  border: 2px solid rgba(248, 147, 80, 0.2);
   border-radius: 100%;
   background: #ffffff;
-  -webkit-transition: 0.5s ease background-color;
-  transition: 0.5s ease background-color;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
 
-.page__light .crypto .crypto__items .crypto__item button:hover {
-  -webkit-transition: 0.5s ease background-color;
-  transition: 0.5s ease background-color;
-  background-color: rgba(174, 138, 241, 0.2);
+.page__violet .crypto .crypto__items .crypto__item button:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: #e08e68;
+}
+
+.page__violet .crypto .crypto__items .crypto__item:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  -webkit-box-shadow: 0px 30px 30px #9f72f3;
+          box-shadow: 0px 30px 30px #9f72f3;
 }
 
 .mining {
   width: 120.2rem;
-  height: 39.2rem;
+  height: 49.2rem;
   padding-left: 15rem;
   padding-right: 15rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2b076e), to(#0d0d2b));
-  background: linear-gradient(180deg, #2b076e 0%, #0d0d2b 100%);
+  background: #010004;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -643,9 +731,13 @@ body {
 }
 
 .mining .mining__items {
-  width: 120rem;
-  height: 21.6rem;
-  background: #3671e9;
+  width: 110rem;
+  height: 31.6rem;
+  background-image: url(../image/blockchain.jpg);
+  -webkit-box-shadow: 0px 15px 15px rgba(255, 204, 51, 0.5);
+          box-shadow: 0px 15px 15px rgba(255, 204, 51, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 1.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -660,14 +752,114 @@ body {
   font-size: 1.6rem;
 }
 
-.mining .mining__items .mining__right h3 {
+.mining .mining__items .mining__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: -25rem;
+}
+
+.mining .mining__items .mining__content .icon-usb {
+  width: 25rem;
+  height: 25rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.mining .mining__items .mining__content .icon-usb:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
+}
+
+.mining .mining__items .mining__right {
+  width: 15.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 5rem;
+}
+
+.mining .mining__items .mining__right a {
+  width: 15.2rem;
+  height: 5.5rem;
+  border-radius: 3.2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e08e68), to(orange));
+  background: linear-gradient(#e08e68, orange);
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #0d0d2b;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.mining .mining__items .mining__right a img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.mining .mining__items .mining__right a span {
+  font-weight: 500;
+}
+
+.mining .mining__items .mining__right a:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  -webkit-box-shadow: 0px 10px 10px rgba(255, 204, 51, 0.5);
+          box-shadow: 0px 10px 10px rgba(255, 204, 51, 0.5);
+}
+
+.mining .mining__items .mining__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mining .mining__items .mining__left h3 {
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 150%;
-  margin-bottom: 1.6rem;
+  color: #00eebe;
+  margin: 0;
 }
 
-.mining .mining__items .mining__right p {
+.mining .mining__items .mining__left p {
   width: 34.8rem;
   height: 5.6rem;
   font-weight: 400;
@@ -675,38 +867,12 @@ body {
   letter-spacing: 0.01em;
 }
 
-.mining .mining__items .mining__input {
-  width: 40.3rem;
-  background: #3671e9;
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 150%;
-  border-style: none;
-  border-bottom: 0.1rem solid #e0e0e0;
-}
-
-.mining .mining__items .mining__input::-webkit-input-placeholder {
-  color: white;
-}
-
-.mining .mining__items .mining__input:-ms-input-placeholder {
-  color: white;
-}
-
-.mining .mining__items .mining__input::-ms-input-placeholder {
-  color: white;
-}
-
-.mining .mining__items .mining__input::placeholder {
-  color: white;
-}
-
-.mining .mining__items .mining__btn {
-  width: 15.2rem;
-  height: 5.5rem;
+.mining .mining__items .mining__left .mining__btn {
+  width: 30.2rem;
+  height: 6.4rem;
   border-radius: 3.2rem;
-  background: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00eebe), to(#005e32));
+  background: linear-gradient(#00eebe, #005e32);
   border: none;
   color: #0d0d2b;
   font-weight: 500;
@@ -717,39 +883,120 @@ body {
   transition: 0.5s ease all;
 }
 
-.mining .mining__items .mining__btn:hover {
+.mining .mining__items .mining__left .mining__btn:hover {
   -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
-  background-color: #2b076e;
+  background: -webkit-gradient(linear, left top, left bottom, from(#be9ff8), to(#050b3b));
+  background: linear-gradient(#be9ff8, #050b3b);
   color: #ffffff;
 }
 
 .footer {
   width: 120.2rem;
-  height: 18rem;
+  height: 32rem;
   padding-left: 15rem;
   padding-right: 15rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00eebe), to(#005e32));
+  background: linear-gradient(#00eebe, #005e32);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #0d0d2b;
   font-family: "Rubik";
   font-weight: 400;
   font-size: 1.6rem;
 }
 
-.footer .footer__text {
-  line-height: 2.8rem;
-  letter-spacing: 0.01em;
+.footer .footer__items {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 8rem;
+}
+
+.footer .footer__items .footer__item {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: "Rubik";
+}
+
+.footer .footer__items .footer__item h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.footer .footer__items .footer__item hr {
+  border: 0;
+  width: 18rem;
+  border-top: 0.2rem solid rgba(255, 204, 51, 0.8);
+  margin: 1rem 0;
+}
+
+.footer .footer__items .footer__item a {
+  text-decoration: none;
+  color: #353333;
+  font-size: 1.4rem;
+  letter-spacing: normal;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.footer .footer__items .footer__item a:hover {
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  color: #ffcc33;
 }
 
 .footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .social p {
+  margin: 1.3rem 0;
+}
+
+.footer .social .footer__text {
+  line-height: 2.8rem;
+  letter-spacing: 0.01em;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.footer .social__media {
   width: 28rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -762,11 +1009,12 @@ body {
           justify-content: space-between;
 }
 
-.footer .social a {
-  opacity: 0.8;
+.footer .social__media a .footer__icon {
+  width: 2rem;
+  height: 2rem;
 }
 
-.footer .social a:hover {
+.footer .social__media a:hover {
   opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

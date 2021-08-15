@@ -14,7 +14,8 @@
   <body>
     <header class="header">
       <a href="#" class="logo">
-        <img src="./image/Logo.png" alt="Logo" />
+        <img src="./image/logo.jpg" alt="Logo" />
+        <p>ineHash</p>
       </a>
       <nav>
         <ul class="nav__items">
@@ -31,6 +32,7 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="info">
         <div class="info__wrap">
@@ -47,27 +49,36 @@
           </p>
           <button class="info__btn">Try for FREE</button>
         </div>
-        <img src="./image/Illustration.svg" alt="cryptocurrency" />
+
+        <div class="img-blur">
+          <img src="./image/bitcoin-4897795_640.jpg" alt="cryptocurrency" />
+        </div>
       </section>
 
       <section class="statistics">
         <div class="statistics__items">
           <div class="statistics__item">
-            <img src="./image/Icon01.svg" alt="icon" />
+            <div class="statistics-image">
+              <img src="./image/icon-line-chart.png" alt="icon" />
+            </div>
             <div class="item__text">
-              <span>$30B</span>
-              <p>Digital Currency Exchanged</p>
+              <span>593872,73</span>
+              <p>Capitalization</p>
             </div>
           </div>
           <div class="statistics__item">
-            <img src="./image/Icon02.svg" alt="icon" />
+            <div class="statistics-image">
+              <img src="./image/free-icon-teamwork-4337295.png" alt="icon" />
+            </div>
             <div class="item__text">
               <span>10M+</span>
               <p>Trusted Wallets Investor</p>
             </div>
           </div>
           <div class="statistics__item">
-            <img src="./image/Icon03.svg" alt="icon" />
+            <div class="statistics-image">
+              <img src="./image/icon-planet.png" alt="icon" />
+            </div>
             <div class="item__text">
               <span>195</span>
               <p>Countries Supported</p>
@@ -87,33 +98,39 @@
           <input
             type="text"
             class="calck__head--input"
-            placeholder="Enter your hash rate"
+            placeholder="Calculate your income"
           />
           <select class="calck__head--select">
+            <option value="eh">DOGE/s</option>
             <option value="th">TH/s</option>
             <option value="ph">PH/s</option>
             <option value="eh">EH/s</option>
+            <option value="eh">BNB/s</option>
+            <option value="eh">ADA/s</option>
+            
           </select>
           <button class="calck__btn" type="submit">Calculate</button>
         </div>
       </section>
-      <section class="page__light">
-        <div class="page__light--items">
+
+      <section class="page__violet">
+        <div class="page__violet--items">
           <div class="calck__footer">
             <p class="calck__footer--title">ESTIMATED 24 HOUR REVENUE:</p>
             <p class="calck__footer--total">
-              0.055 130 59 ETH <span>($1275)</span>
+              1 DOGE = $ 0,268373  <span>+0,018159 (+7,25%) USD</span>
             </p>
             <p class="calck__footer--discription">
-              Revenue will change based on mining difficulty and Ethereum price.
+              The circulating offer is 130 840 692 978 DOGE coins and max. no offer.
             </p>
           </div>
         </div>
         <div class="crypto">
           <h2 class="crypto__title">
-            Trade securely and market the high growth cryptocurrencies.
+            Buy and sell cryptocurrency quickly and safely.
           </h2>
           <div class="crypto__items">
+
             <div class="crypto__item bitcoin">
               <img src="./image/Iconbts.svg" alt="bts" />
               <h3>Bitcoin<span>BTC</span></h3>
@@ -121,12 +138,12 @@
                 Digital currency in which a record of transactions is
                 maintained.
               </p>
-              <a>
-                <span class="text__btn">Start mining </span>
-                <span class="vector__btn"></span>
-              </a>
+              <button>
+                <img class="image__btn" src="./image/icon-arrow.png" alt="vector" />
+              </button>
             </div>
-            <div class="crypto__item">
+          
+            <div class="crypto__item ethereum">
               <img src="./image/Iconeth.svg" alt="eth" />
               <h3>Ethereum<span>ETH</span></h3>
               <p>
@@ -134,10 +151,36 @@
                 applications.
               </p>
               <button>
-                <img class="image__btn" src="./image/Vector.png" alt="vector" />
+                <img class="image__btn" src="./image/icon-arrow.png" alt="vector" />
               </button>
             </div>
-            <div class="crypto__item">
+
+            <div class="crypto__item chiliz">
+              <img src="./image/chz.png" alt="cardano coin" />
+              <h3>Chiliz<span>CHZ</span></h3>
+              <p>
+                The digital currency for sports, is up over 114% in the past 24 hours.
+              </p>
+              <button>
+                <img class="image__btn" src="./image/icon-arrow.png" alt="vector" />
+              </button>
+            </div>
+
+
+            <div class="crypto__item dogecoin">
+              <img src="./image/dogecoin.png" alt="LTC" />
+              <h3>Dogecoin<span>DOGE</span></h3>
+              <p>
+                Dogecoin's value has surpassed the $ 0.50 barrier, increasing
+                more than 20,000% in a year.
+              </p>
+              <a>
+                <span class="text__btn">Start mining </span>
+              </a>
+            </div>
+
+
+            <div class="crypto__item litecoin">
               <img src="./image/IconLTC.svg" alt="LTC" />
               <h3>Litecoin<span>LTC</span></h3>
               <p>
@@ -145,40 +188,116 @@
                 world.
               </p>
               <button>
-                <img class="image__btn" src="./image/Vector.png" alt="vector" />
+                <img class="image__btn" src="./image/icon-arrow.png" alt="vector" />
               </button>
             </div>
+
+            <div class="crypto__item cardano">
+              <img src="./image/ada.png" alt="cardano coin" />
+              <h3>Cardano<span>ADA</span></h3>
+              <p>
+                Concentration of large shareholders 23%
+              </p>
+              <button>
+                <img class="image__btn" src="./image/icon-arrow.png" alt="vector" />
+              </button>
+            </div>
+           
           </div>
         </div>
       </section>
+
       <section class="mining">
         <div class="mining__items">
-          <div class="mining__right">
-            <h3>Start mining now</h3>
-            <p>
-              Join now with CRAPPO to get the latest news and start mining now
-            </p>
+          <div class="mining__content">
+            <img  class="icon-usb" src="./image/free-icon-usb-gor.png" alt="dogecoin">
+            <div class="mining__right">
+              <a>
+                <img src="./image/icons-ос-mac.png" alt="MacOs">
+                <span class="text__btn">MacOs</span>
+              </a>
+              <a>
+                <img src="./image/icons-windows.png" alt="windows">
+                <span class="text__btn">Windows</span>
+              </a>
+              <a>
+                <img src="./image/icons-ос-линукс.png" alt="linux">
+                <span class="text__btn">Linux</span>
+              </a>
+            </div>
           </div>
-          <input
-            type="text"
-            class="mining__input"
-            placeholder="Enter your email"
-          />
-          <button class="mining__btn">Subscribe</button>
+         
+         
+
+          <div class="mining__left">
+            <h3>Running a mining farm?</h3>
+            <p>
+              MineHash OS - FREE mining operating system with unlimited rigs!
+            </p>
+            <button class="mining__btn">learn more about MineHash</button>
+          </div>
+         
         </div>
       </section>
     </main>
     <footer class="footer">
-     
-        <p class="footer__text">©2021 CRAPPO. All rights reserved</p>
-        <div class="social">
-          <a href="#" target="_blank"><img src="./image/facebook-f.svg" alt="facebook" /></a>
-          <a href="#" target="_blank"><img src="./image/instagram.svg" alt="instagram" /></a>
-          <a href="#" target="_blank"><img src="./image/youtube.svg" alt="youtube" /></a>
-          <a href="#" target="_blank"><img src="./image/twitter.svg" alt="twitter" /></a>
-          <a href="#" target="_blank"><img src="./image/linkedin.svg" alt="lincedin" /></a>
+      <div class="footer__items">
+        <div class="footer__item">
+          <h3>mining</h3>
+          <hr>
+          <a href="#" target="_blank">Start mining</a>
+          <a href="#" target="_blank">MineHash OS</a>
+          <a href="#" target="_blank">Algorithms</a>
+          <a href="#" target="_blank">Profitability</a>
         </div>
+        <div class="footer__item">
+          <h3>capacity market</h3>
+          <hr>
+          <a href="#" target="_blank">Online market</a>
+          <a href="#" target="_blank">Prices</a>
+          <a href="#" target="_blank">Compatible pools</a>
+          <a href="#" target="_blank">Countdown</a>
+        </div>
+        <div class="footer__item">
+          <h3>Company</h3>
+          <hr>
+          <a href="#" target="_blank">About Us</a>
+          <a href="#" target="_blank">Support</a>
+          <a href="#" target="_blank">Reference</a>
+          <a href="#" target="_blank">Status</a>
+        </div>
+        <div class="footer__item">
+          <h3>developers</h3>
+          <hr>
+          <a href="#" target="_blank">Software developers</a>
+          <a href="#" target="_blank">Pool operators</a>
+          <a href="#" target="_blank">API</a>
+          <a href="#" target="_blank">Business development</a>
+        </div>
+    </div>
       
+      <div class="social">
+          <p>CONTACT US AT</p>
+      <div class="social__media">
+        <a href="#" target="_blank"
+        ><img class="footer__icon" src="./image/icons8-facebook.png" alt="facebook"
+      /></a>
+      <a href="#" target="_blank"
+        ><img class="footer__icon" src="./image/instagram_icon.png" alt="instagram"
+      /></a>
+      <a href="#" target="_blank"
+        ><img class="footer__icon" src="./image/icons8-youtube.png" alt="youtube"
+      /></a>
+      <a href="#" target="_blank"
+        ><img class="footer__icon" src="./image/icons8-twitter.png" alt="twitter"
+      /></a>
+      <a href="#" target="_blank"
+        ><img class="footer__icon" src="./image/linkedin.ico" alt="lincedin"
+      /></a>
+      </div>
+      <p class="footer__text">©2021 MineHash. All rights reserved</p>
+      </div>
     </footer>
   </body>
 </html>
+<!-- Изображение <a href="https://pixabay.com/ru/users/xresch-7410129/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3747529">xresch</a> с сайта <a href="https://pixabay.com/ru/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3747529">Pixabay</a> -->
